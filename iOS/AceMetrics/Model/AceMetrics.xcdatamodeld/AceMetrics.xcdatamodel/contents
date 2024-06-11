@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21D62" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Player" representedClassName="Player" syncable="YES" codeGenerationType="class">
+        <attribute name="firstName" attributeType="String" defaultValueString=""/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="lastName" optional="YES" attributeType="String" defaultValueString=""/>
+        <attribute name="playingHand" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="sessionId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="sessions" optional="YES" toMany="YES" minCount="1" maxCount="100000" deletionRule="Cascade" destinationEntity="ServiceSession" inverseName="player" inverseEntity="ServiceSession"/>
+    </entity>
+    <entity name="Service" representedClassName="Service" syncable="YES" codeGenerationType="class">
+        <attribute name="action" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="court" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="index" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="placement" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="result" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="session" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ServiceSession" inverseName="services" inverseEntity="ServiceSession"/>
+    </entity>
+    <entity name="ServiceSession" representedClassName="ServiceSession" syncable="YES" codeGenerationType="class">
+        <attribute name="active" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" attributeType="String" defaultValueString="New Session"/>
+        <attribute name="startTime" attributeType="Date" defaultDateTimeInterval="-63178200" usesScalarValueType="NO"/>
+        <relationship name="player" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Player" inverseName="sessions" inverseEntity="Player"/>
+        <relationship name="services" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Service" inverseName="session" inverseEntity="Service"/>
+    </entity>
+    <elements>
+        <element name="Player" positionX="-320.37109375" positionY="-127.92578125" width="128" height="119"/>
+        <element name="Service" positionX="-64.4453125" positionY="-195.27734375" width="128" height="119"/>
+        <element name="ServiceSession" positionX="-27" positionY="9" width="128" height="119"/>
+    </elements>
+</model>

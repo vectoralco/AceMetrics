@@ -1,0 +1,8 @@
+/* 
+  InfoPlist.strings
+  AceMetrics
+
+  Created by Vijayakumar B on 05/04/22.
+  
+*/
+"NSContactsUsageDescription" = "連絡先から選手のプロフィール画像を表示するには、アクセスが必要です";

@@ -1,0 +1,8 @@
+/* 
+  InfoPlist.strings
+  AceMetrics
+
+  Created by Vijayakumar B on 05/04/22.
+  
+*/
+"NSContactsUsageDescription" = "Access is required to show the player profile picture from Contacts";
