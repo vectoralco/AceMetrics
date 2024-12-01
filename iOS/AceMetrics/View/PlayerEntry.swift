@@ -284,7 +284,7 @@ struct NewPlayerSheet: View {
 }
 
 struct UpdatePlayerSheet: View {
-    @Environment (\.presentationMode) var presentationMode
+    @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var context : AppContext
     @ObservedObject var playerData: PlayerData
     @ObservedObject var player : Player
