@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1540"
+   LastUpgradeVersion = "1610"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B1094D33270D7ED8006BAD7D"
+               BlueprintIdentifier = "B11B53CC2CFC17E2000E1DBD"
                BuildableName = "AceMetricsUITests.xctest"
                BlueprintName = "AceMetricsUITests"
                ReferencedContainer = "container:AceMetrics.xcodeproj">
