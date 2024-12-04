@@ -10,7 +10,7 @@ These are the app features which help players, coaches and parents to help impro
 3. During practice, the graphs and charts indicate the distribution of serves across zones and the outcome
 4. View the details of all the practice sessions
 
-![image](https://github.com/user-attachments/assets/7bc3c533-ec7d-456c-bf8e-3b8e14b65e5b)
+![image](https://github.com/user-attachments/assets/640d23b8-4fe4-4c46-acd5-50856b2edd9e)
 
 https://github.com/vectoralco/AceMetrics/assets/18183654/2e13b46d-dd9b-4907-b4e8-5019b1b6c6f6
 
